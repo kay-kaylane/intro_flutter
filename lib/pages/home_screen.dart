@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intro_flutter/components/custom_card.dart';
 import 'package:intro_flutter/examples/value_notifier_counter_screen.dart';
+import 'package:intro_flutter/pages/gps_page.dart';
 //import 'package:intro_flutter/pages/counter_screen_page.dart';
 
 
@@ -26,6 +27,12 @@ class HomeScreen extends StatelessWidget {
                   description: 'Exemplo Contador', 
                   icon: Icons.add_circle_outline, 
                   destination: CounterScreenValueNotifier(),
+                  ),
+                  CustomCard(
+                  title: 'GPS', 
+                  description: 'Exemplo GPS', 
+                  icon: Icons.add_circle_outline, 
+                  destination: GpsPage(),
                   )
               ],
             ),
